@@ -13,6 +13,7 @@
     * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         /* Fondo de la página */
@@ -22,47 +23,46 @@
             background-position: center center; /* Centra la imagen de fondo */
             background-repeat: no-repeat; /* Evita la repetición de la imagen */
             background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza el contenido */
-            height: 100vh; /* Asegura que el body ocupe el 100% de la altura de la ventana */
+            height: 100vh; /* La altura del body es el 100% de la ventana */
             display: flex;
             justify-content: center;
-            align-items: center; /* Centra el contenido tanto horizontal como verticalmente */
+            align-items: center; /* Centra el contenido tanto vertical como horizontalmente */
+            font-family: Arial, sans-serif;
         }
 
-        /* Contenedor del video, debe estar centrado y responsivo */
+        /* Contenedor del video */
         .video-container {
             background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad para mejorar la visibilidad del video */
             padding: 20px;
             border-radius: 10px; /* Esquinas redondeadas */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para que se vea destacado sobre el fondo */
-            max-width: 100%; /* Asegura que el contenedor sea responsivo */
-            width: 90%; /* El contenedor ocupa el 90% del ancho de la pantalla */
-            height: auto;
+            width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+            max-width: 800px; /* Máximo ancho para no exceder los límites de una pantalla grande */
         }
 
         /* Ajuste del video para que sea responsivo */
         video {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
 
-        /* Ajuste para el botón */
+        /* Botón de regreso al inicio */
         .d-flex {
             position: absolute;
             top: 10px;
             right: 20px;
+            z-index: 1;
         }
 
-        /* Media Query para pantallas pequeñas */
+        /* Media Query para pantallas pequeñas (móviles) */
         @media (max-width: 576px) {
-            .container {
+            .video-container {
                 padding: 10px;
             }
 
-            .video-container {
-                width: 95%; /* Aumenta el tamaño del contenedor en dispositivos pequeños */
-            }
+          
         }
     </style>
 </head>
