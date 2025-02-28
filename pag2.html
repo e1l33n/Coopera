@@ -11,26 +11,36 @@
     <link rel="stylesheet" href="style.css">
     <style>
        
-      * {
+       * {
             margin: 0;
+            padding: 0;
         }
 
+        /* Fondo de la página que cubre toda la pantalla */
         body {
             background-image: url("AHORROS.png");
-            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-size: cover; /* La imagen cubre toda la pantalla */
             background-position: center center; /* Centra la imagen de fondo */
             background-repeat: no-repeat; /* Evita la repetición de la imagen */
-            height: 100vh; /* Establece la altura del body al 100% de la pantalla */
+            height: 100vh; /* Asegura que el body ocupe el 100% de la altura de la ventana */
             display: flex;
             justify-content: center;
-            align-items: center; /* Centra el contenido de la página */
+            align-items: center; /* Centra el contenido tanto horizontal como verticalmente */
         }
 
+        /* Ajuste del video para que sea responsivo */
         video {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
+        }
+
+        /* Ajuste para el botón */
+        .d-flex {
+            position: absolute;
+            top: 10px;
+            right: 20px;
         }
 
         /* Media Query para pantallas pequeñas */
@@ -38,6 +48,7 @@
             .container {
                 padding: 10px;
             }
+        }
         }
     </style>
 </head>
