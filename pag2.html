@@ -13,27 +13,29 @@
         *{
             margin:0;
         }
-     body {
+   body {
     background-image: url("AHORROS.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Cambiado a scroll */
     color: white;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+    min-height: 100vh;
 }
-       video {
-            width: 100%; /* El video ocupa el 100% del ancho de su contenedor */
-            height: auto; /* La altura se ajusta automáticamente */
-            display: block; /* Elimina espacios innecesarios debajo del video */
-            margin: 20px auto; /* Centra el video horizontalmente */
-        }
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 576px) {
     .container {
         padding: 10px;
     }
+
 }
       
     </style>
