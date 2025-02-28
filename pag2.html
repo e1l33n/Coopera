@@ -11,49 +11,41 @@
     <link rel="stylesheet" href="style.css">
     <style>
        
-      *{
-          margin:0;
-      }
+      * {
+            margin: 0;
+        }
 
-body {
-    background-image: url("AHORROS.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* o scroll */
-   
-}
+        body {
+            background-image: url("AHORROS.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-   
-   
-}
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
         .contenedor {
-    background-image: url("AHORROS.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* o scroll */
-    width: 100%; /* o un ancho específico */
-    height: 500px; /* o una altura específica o relativa */
-}
+            width: 100%;
+            height: 500px;
+        }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 576px) {
-    .container {
-        padding: 10px;
-    }
-
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 576px) {
+            .container {
+                padding: 10px;
+            }
 }
       
     </style>
 </head>
 <body>
-    <div class="d-flex justify-content-end mt-3">
+     <div class="d-flex justify-content-end mt-3">
         <a href="index.html" class="btn btn-success">Volver al inicio</a>
     </div>
 
@@ -61,12 +53,13 @@ video {
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <div class="text-center">
-                    <video controls src="video1.mp4" type="video/mp4"></video>
+                    <!-- Asegúrate de que la ruta del video sea correcta -->
+                    <video controls src="video1.mp4" type="video/mp4">
+                        Tu navegador no soporta este formato de video.
+                    </video>
                 </div>
             </div>
         </div>
     </div>
-
-   
 </body>
 </html>
