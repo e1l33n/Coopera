@@ -17,10 +17,13 @@
 
         body {
             background-image: url("AHORROS.png");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center center; /* Centra la imagen de fondo */
+            background-repeat: no-repeat; /* Evita la repetición de la imagen */
+            height: 100vh; /* Establece la altura del body al 100% de la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra el contenido de la página */
         }
 
         video {
@@ -30,22 +33,16 @@
             margin: 0 auto;
         }
 
-        .contenedor {
-            width: 100%;
-            height: 500px;
-        }
-
         /* Media Query para pantallas pequeñas */
         @media (max-width: 576px) {
             .container {
                 padding: 10px;
             }
-}
-      
+        }
     </style>
 </head>
 <body>
-     <div class="d-flex justify-content-end mt-3">
+    <div class="d-flex justify-content-end mt-3">
         <a href="index.html" class="btn btn-success">Volver al inicio</a>
     </div>
 
